@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>ejercicio 13</title>
+</head>
+<body>
+
+<h2>Formulario de Consulta</h2>
+
+<form action="enviar.php" method="post">
+
+    Nombre:
+    <input type="text" name="nombre" maxlength="25">
+
+    <br><br>
+
+    Apellido:
+    <input type="text" name="apellido" maxlength="25">
+
+    <br><br>
+
+    Dirección:
+    <br>
+    <textarea name="direccion" maxlength="30" rows="3" cols="30"></textarea>
+
+    <br><br>
+
+    Teléfono:
+    <input type="text" name="telefono" maxlength="15" value="0299">
+
+    <br><br>
+
+    Operación deseada:
+    <br>
+    <input type="radio" name="operacion" value="Alquiler"> Alquiler
+    <br>
+    <input type="radio" name="operacion" value="Compra" checked> Compra
+
+    <br><br>
+
+    Zona de interés:
+    <br>
+    <input type="checkbox" name="zona[]" value="Centro" checked> Zona Centro
+    <br>
+    <input type="checkbox" name="zona[]" value="Norte"> Zona Norte
+    <br>
+    <input type="checkbox" name="zona[]" value="Sur" checked> Zona Sur
+
+    <br><br>
+
+    Comentario del inmueble que busca:
+    <br>
+    <textarea name="comentario" rows="5" cols="40"></textarea>
+
+    <br><br>
+
+    <input type="reset" value="Restablecer">
+    <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
